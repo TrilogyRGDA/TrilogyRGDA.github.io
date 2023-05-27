@@ -1,0 +1,234 @@
+/*Parametros generales*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh; /* Para poder hacer el fondo que sea el 100%*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80), rgba(52, 71, 57, 0.80)), url(../IMAGENES/imagenfondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Roboto, "sans-serif";
+}
+/*Barra de navegación*/
+/*Poner margenes y alineado básico*/
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.navegador ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+}
+.navegador li {
+    list-style: none;
+    text-align: center;
+    flex-grow: 1;
+}
+/*Asigno el tamaño al logo y que cuando pase el cursor se vuelve como un si fuera un enlace*/
+.logo {
+    width: 250px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+/*Ordeno la lista desordenada y los diferentes listados en linea*/
+.navegador ul li {
+    list-style: none; /*Ilimino el estilo por defecto de las listas*/
+    display: inline-block; /*Pongo que la disposición se en linea ej: 1 2 3 4 5*/
+    margin: 0 20px; /*Margen vertical de 0 y margen horizontal de 20 px*/
+    position: relative;
+    margin-bottom: 10PX;
+}
+/*Le digo que los enlaces que estan dentro del navegador dentro de la lista y dentro del listado no tenga el estilo por defecto, color blanco, tipo de letra roboto o sans-serif y con un tamaño de 19px*/
+.navegador ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+/*Animaciones del menu*/
+.navegador ul li a:hover{
+    text-decoration: none;
+    color: #ffff00;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+/*Pie de página*/
+footer{
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    color: #ffffff;
+    right: 0;
+    margin-bottom: 20px;
+    font-size: 19px;
+    margin-right: 10px;
+}
+/*Ajuste de imagen en general*/
+.img_gen {
+    width: 100%; /* la imagen ocupará todo el ancho disponible */
+    height: auto; /* la altura se ajustará automáticamente según el ancho */
+    max-width: 250px; /* se establece un ancho máximo para evitar que la imagen se estire demasiado */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*Parametros para el carrousel de imágenes*/
+img{
+    width: 100%;
+    height: 100%;
+}
+.contenedor_ca {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.contenedor_ca2 {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.contenedor_ca3 {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.contenedor_ca4 {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.contenedor_ca5 {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.contenedor_ca6 {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+.botones{
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.botones:hover{
+    cursor: pointer;
+    transform: scale(1.2,1.2);
+}
+.atras{
+    left: 2%;
+    top: calc(50% - 70px);
+}
+.adelante{
+    right: 2%;
+    top: calc(50% - 70px);
+}
+/*Parametros para el section y el article*/
+.contenedor {
+    color: #ffffff;
+    width: 100%;
+    margin: 0 auto; /* centrar el contenido */
+    display: flex;
+    justify-content: space-between;
+}
+.hijo {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.hijo2 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+}
+/*Ajustes diversos para las imágenes*/
+.contenedor_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_img img {
+    max-width: 100%;
+    width: 800px;
+    padding: 20px;
+    /*max-height: 100%;
+    height: 450px;*/
+    height: auto;
+}
+.cont_cod ol {
+    margin-left: 40px;
+}
+.cont_cod li {
+    font-size: 17px;
+}
+.cont_cod a {
+    margin-left: 50px;
+}
+.img_GitHub {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+/*Para el texto con formato de las imágenes*/
+figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff4040;
+}
+/*Clase para centrar párrafos*/
+.p_centrado {
+    margin-top: 10px;
+    text-align: center;
+}
+/*Aspecto de los enlaces*/
+a{
+    text-decoration: none;
+    color: #c7c7c7;
+}
+/*Aspecto de los titulos*/
+h2{
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: #309b4f;
+}
+.h2_realizado_por {
+    margin-left: 20px;
+}
+/*Para los textos grandes*/
+.analisis{
+    font-size: 17px;
+    word-wrap: break-word;
+}
+/*Parametro grobal para los párrafos*/
+p {
+    font-size: 17px;
+}
+/*Haspecto especificos para los componentes que estan dentro de la clase .hijo*/
+.hijo ol li ol {
+    list-style-type: square;
+    margin-left: 30px;
+}

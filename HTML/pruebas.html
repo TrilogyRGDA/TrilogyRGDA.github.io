@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Adrián Leal Vacas">
+    <meta name="description" content="Página de inicio del proyecto Trilogy donde pondremos la documentación a entregar">
+    <meta name="copyright" content="Adrián Leal Vacas, Gonzalo Amo Cano y Raúl Senso Montojo">
+    <meta name="generator" content="Visual studio code, HTML5, CSS y JavaScript">
+    <link rel="stylesheet" href="../CSS/style.css" type="text/css" media="all"/>
+    <title>Pruebas</title>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <nav class="navegador">
+           <!-- Logo -->
+           <a href="../index.html"><img src="../IMAGENES/logoblanco.png" class="logo" alt="Mi logo"></a>
+            <!-- Lista de enlaces -->
+            <ul>
+                <li>
+                    <a href="#Pruebas_internas">Pruebas internas con Junit4</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Cuerpo del HTML -->
+    <section class="contenedor">
+        <article class="hijo">
+            <h2 id="Pruebas_internas">
+                Pruebas internas con Junit4
+            </h2>
+            <p>
+                Las pruebas realizadas en la clase Inicio_Sesion son de los siguientes metodos:
+                <ol>
+                    <br>
+                    <li>
+                        <p>
+                            "id_user_For_Correo" Este metodo necesita un correo y con el correo realiza un select que devuelve el id del usuario con el correo introducido (devuelve un int), en las pruebas el metodo que lo comprueba se llama "testIdUserForCorreo".<br>En el testIdUserForCorreo tenemos primero que crear el objeto inicioSesion, una vez creado por comodidad he creado dos variables en el test que son "idEsperado" y "idObtenido" donde el "idEsperado" es el resultado que espero que me de con el metodo realizado y "idObtenido" es el id que obtengo del metodo, y luego con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que hace es comparar si el resultado obtenido en la variable "idObtenido" es igual a la variable con el resultado esperado "idEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "countAdmin" Este metodo necesita el id del usuario y con id del usuario realiza un select count que cuenta cuantas veces esta el id del usuario como administrador (devuelve un int), en las pruebas el metodo que lo comprueba se llama "testCountAdmin".<br>En el testCountAdmin tenemos primero que crear el objeto inicioSesion, una vez creado por comodidad he creado dos variables en el test que son "countEsperado" y "countObtenido" donde el "countEsperado" es el resultado que espero que me de con el metodo realizado y "countObtenido" es el id que obtengo del metodo, y luego con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que hace es comparar si el resultado obtenido en la variable "countObtenido" es igual a la variable con el resultado esperado "countEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "countPasswd" Este metodo necesita la contraseña y el id del usuario y con la contraseña e id del usuario  introducidos realiza un select count que cuenta cuantas veces esta la contraseña con el id introducido para averiguar si la contraseña existe en el usuario indicado (devuelve un int), en las pruebas el metodo que lo comprueba se llama "testCountPasswd".<br>En el testCountPasswd tenemos primero que crear el objeto inicioSesion, una vez creado por comodidad he creado dos variables en el test que son "countEsperado" y "countObtenido" donde el "countEsperado" es el resultado que espero que me de con el metodo realizado y "countObtenido" es el id que obtengo del metodo, y luego con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que hace es comparar si el resultado obtenido en la variable "countObtenido" es igual a la variable con el resultado esperado "countEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "countID_USER" Este metodo necesita el id del usuario y con id del usuario realiza un select count que cuenta cuantas veces esta el id del usuario (devuelve un int), en las pruebas el metodo que lo comprueba se llama "testCountID_USER".<br>En el testCountID_USER tenemos primero que crear el objeto inicioSesion, una vez creado por comodidad he creado dos variables en el test que son "countEsperado" y "countObtenido" donde el "countEsperado" es el resultado que espero que me de con el metodo realizado y "countObtenido" es el id que obtengo del metodo, y luego con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que hace es comparar si el resultado obtenido en la variable "countObtenido" es igual a la variable con el resultado esperado "countEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "obtenerID_MEMBRESIA" Este metodo necesita el id del usuario y con id del usuario realiza un select que busca que membresía tiene ese usuario (devuelve un int), en las pruebas el metodo que lo comprueba se llama "testObtenerID_MEMBRESIA".<br>En el testObtenerID_MEMBRESIA tenemos primero que crear el objeto inicioSesion, una vez creado por comodidad he creado dos variables en el test que son "countEsperado" y "countObtenido" donde el "countEsperado" es el resultado que espero que me de con el metodo realizado y "countObtenido" es el id que obtengo del metodo, y luego con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que hace es comparar si el resultado obtenido en la variable "countObtenido" es igual a la variable con el resultado esperado "countEsperado".
+                        </p>
+                    </li>
+                    
+                </ol>
+            </p>
+            <div class="contenedor_img">
+                <figure>
+                    <a href="https://github.com/TrilogyRGDA/Pagina_inicio_sesion" target="_blank"><img src="../IMAGENES/Pruebas_In_Sesion.png" class="img_gen" alt="Pruebas"></a>
+                </figure>
+            </div>
+            <br><br><br><br><br><br>
+            <p>
+                Las pruebas realizadas en la clase CatalogoAudiovisual son de los siguientes metodos:
+                <ol>
+                    <br>
+                    <li>
+                        <p>
+                            "obtenerImagenPelicula" Este metodo estático necesita un indice del ArrayList, un ancho y un alto y con esos datos devuelve un ImageIcon es decir una imagen del ArrayList con el ancho y alto indicados, en las pruebas el metodo que lo comprueba se llama "testObtImagenPeli".<br>En el testObtImagenPeli lo que hacemos es mirar si el dato obtenido por el metodo que lo he guardado por comodidad en una variable llamada "imagen" es diferente a null y eso lo realizamos con el metodo "assertNotNull" que esta con las pruebas de Junit4.
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverRutaPeli" Este metodo necesita el indice del ArrayList y te devuelve la ruta de la película, en las pruebas el metodo que lo comprueba se llama "testDevRutaPeli".<br>En el testDevRutaPeli he creado por comodidad dos variables en el test que son "ruta" y "resulEsperado" donde el "ruta" es el resultado que espero que me de con el metodo realizado y "resulEsperado" es el que obtengo con el metodo, y luego con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que hace es comparar si el resultado obtenido en la variable "ruta" es igual a la variable con el resultado esperado "resulEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "addStringPeli" Este metodo necesita la ruta de una película y lo agrega en el ArrayList correspondiente a películas, en las pruebas el metodo que lo comprueba se llama "testAddStringPeli".<br>En el testAddStringPeli es un poco especial por ser void, como lo hemos comprobado a sido agregando la ruta al ArrayList con el metodo, despues en una variable llamada "ruta" obtengo con el metodo "devolverRutaPeli" la ruta de la película y por ultimo tengo otra variable que es "resultEsperado" que tiene la ruta de la pelicula y con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que compruebo que si la la ruta obtenida de la nueva ruta añadida es igual a la ruta que espero.
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverID" Este metodo necesita la ruta de la pelicula y devuelve un String con el id, en las pruebas el metodo que lo comprueba se llama "testDevolverID".<br>En el testDevolverID he creado dos variables "id" y "resultEsperado" donde la variable "id" es la que contiene el resultado con el metodo y "resultEsperado" es la variable con el resultado que espero que de la variable "id", despues con el metodo "assertEquals" que esta con las pruebas de Junit4 compruebo que la variable "id" es igual a la variable "resultEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverID_number" Este metodo necesita la ruta de la pelicula y devuelve un int con la posición en el ArrayList, en las pruebas el metodo que lo comprueba se llama "testDevolverID_number".<br>En el testDevolverID_number he creado dos variables "id" y "resultEsperado" donde la variable "id" es la que contiene el resultado con el metodo y "resultEsperado" es la variable con el resultado que espero que de la variable "id", despues con el metodo "assertEquals" que esta con las pruebas de Junit4 compruebo que la variable "id" es igual a la variable "resultEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "obtenerTextoAlbum" Este metodo necesita un indice y un JLabel y devuelve un String con el texto del album, en las pruebas el metodo que lo comprueba se llama "testObtTxtAlbum".<br>En el testObtTxtAlbum necesitas crear un JLabel y realizo el metodo y agrego el texto al JLabel creado anteriormente y en otra variable llamada "resultEsperado" el texto que espero y con el metodo "assertEquals" que esta con las pruebas de Junit4 compruebo que el texto del JLabel es igual a la variable "resultEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "obtenerTextoCancion" Este metodo necesita un indice y un JLabel y devuelve un String con el texto del album, en las pruebas el metodo que lo comprueba se llama "testObtenerTextoCancion".<br>En el testObtenerTextoCancion necesitas crear un JLabel y realizo el metodo y agrego el texto al JLabel creado anteriormente y en otra variable llamada "resultEsperado" el texto que espero y con el metodo "assertEquals" que esta con las pruebas de Junit4 compruebo que el texto del JLabel es igual a la variable "resultEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "obtenerImagenMusica" Este metodo estático necesita un indice del ArrayList, un ancho y un alto y con esos datos devuelve un ImageIcon es decir una imagen del ArrayList con el ancho y alto indicados, en las pruebas el metodo que lo comprueba se llama "testObtenerImagenMusica".<br>En el testObtenerImagenMusica lo que hacemos es mirar si el dato obtenido por el metodo que lo he guardado por comodidad en una variable llamada "imagen" es diferente a null y eso lo realizamos con el metodo "assertNotNull" que esta con las pruebas de Junit4.
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "obtenerImagenAlbum" Este metodo estático necesita un indice del ArrayList, un ancho y un alto y con esos datos devuelve un ImageIcon es decir una imagen del ArrayList con el ancho y alto indicados, en las pruebas el metodo que lo comprueba se llama "testObtenerImagenAlbum".<br>En el testObtenerImagenAlbum lo que hacemos es mirar si el dato obtenido por el metodo que lo he guardado por comodidad en una variable llamada "imagen" es diferente a null y eso lo realizamos con el metodo "assertNotNull" que esta con las pruebas de Junit4.
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverRutaAlbum" Este metodo necesita el indice del ArrayList y te devuelve la ruta del álbum, en las pruebas el metodo que lo comprueba se llama "testDevolverRutaAlbum".<br>En el testDevolverRutaAlbum he creado por comodidad dos variables en el test que son "ruta" y "resulEsperado" donde el "ruta" es el resultado que espero que me de con el metodo realizado y "resulEsperado" es el que obtengo con el metodo, y luego con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que hace es comparar si el resultado obtenido en la variable "ruta" es igual a la variable con el resultado esperado "resulEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverID_number_album" Este metodo necesita la ruta del álbum y devuelve un int con la posición en el ArrayList + 1, en las pruebas el metodo que lo comprueba se llama "testDevolverID_number_album".<br>En el testDevolverID_number_album he creado dos variables "id" y "resultEsperado" donde la variable "id" es la que contiene el resultado con el metodo y "resultEsperado" es la variable con el resultado que espero que de la variable "id", despues con el metodo "assertEquals" que esta con las pruebas de Junit4 compruebo que la variable "id" es igual a la variable "resultEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverID_array" Este metodo necesita la ruta del álbum y devuelve un int con la posición en el ArrayList, en las pruebas el metodo que lo comprueba se llama "testDevolverID_array".<br>En el testDevolverID_array he creado dos variables "id" y "resultEsperado" donde la variable "id" es la que contiene el resultado con el metodo y "resultEsperado" es la variable con el resultado que espero que de la variable "id", despues con el metodo "assertEquals" que esta con las pruebas de Junit4 compruebo que la variable "id" es igual a la variable "resultEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "obtenerImagenSeries" Este metodo estático necesita un indice del ArrayList, un ancho y un alto y con esos datos devuelve un ImageIcon es decir una imagen del ArrayList con el ancho y alto indicados, en las pruebas el metodo que lo comprueba se llama "testObtenerImagenSeries".<br>En el testObtenerImagenSeries lo que hacemos es mirar si el dato obtenido por el metodo que lo he guardado por comodidad en una variable llamada "imagen" es diferente a null y eso lo realizamos con el metodo "assertNotNull" que esta con las pruebas de Junit4.
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "obtenerImagenCover" Este metodo estático necesita un indice del ArrayList, un ancho y un alto y con esos datos devuelve un ImageIcon es decir una imagen del ArrayList con el ancho y alto indicados, en las pruebas el metodo que lo comprueba se llama "testObtenerImagenCover".<br>En el testObtenerImagenCover lo que hacemos es mirar si el dato obtenido por el metodo que lo he guardado por comodidad en una variable llamada "imagen" es diferente a null y eso lo realizamos con el metodo "assertNotNull" que esta con las pruebas de Junit4.
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverRutaSerie" Este metodo necesita el indice del ArrayList y te devuelve la ruta de las series, en las pruebas el metodo que lo comprueba se llama "testDevolverRutaSerie".<br>En el testDevolverRutaSerie he creado por comodidad dos variables en el test que son "ruta" y "resulEsperado" donde el "ruta" es el resultado que espero que me de con el metodo realizado y "resulEsperado" es el que obtengo con el metodo, y luego con el metodo "assertEquals" que esta con las pruebas de Junit4 lo que hace es comparar si el resultado obtenido en la variable "ruta" es igual a la variable con el resultado esperado "resulEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverIDserie" Este metodo necesita la ruta de la serie y devuelve un String con el id, en las pruebas el metodo que lo comprueba se llama "testDevolverIDserie".<br>En el testDevolverIDserie he creado dos variables "id" y "resultEsperado" donde la variable "id" es la que contiene el resultado con el metodo y "resultEsperado" es la variable con el resultado que espero que de la variable "id", despues con el metodo "assertEquals" que esta con las pruebas de Junit4 compruebo que la variable "id" es igual a la variable "resultEsperado".
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>
+                            "devolverID_numberserie" Este metodo necesita la ruta de la serie y devuelve un int con la posición en el ArrayList, en las pruebas el metodo que lo comprueba se llama "testDevolverID_numberserie".<br>En el testDevolverID_numberserie he creado dos variables "id" y "resultEsperado" donde la variable "id" es la que contiene el resultado con el metodo y "resultEsperado" es la variable con el resultado que espero que de la variable "id", despues con el metodo "assertEquals" que esta con las pruebas de Junit4 compruebo que la variable "id" es igual a la variable "resultEsperado".
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            <div class="contenedor_img">
+                <figure>
+                    <a href="https://github.com/TrilogyRGDA/Clase_categoria_audiovisual" target="_blank"><img src="../IMAGENES/Pruebas_cat_advi1.png" class="img_gen" alt="Pruebas"></a>
+                        <a href="https://github.com/TrilogyRGDA/Clase_categoria_audiovisual" target="_blank"><img src="../IMAGENES/Pruebas_cat_advi2.png" class="img_gen" alt="Pruebas"></a>
+                            <a href="https://github.com/TrilogyRGDA/Clase_categoria_audiovisual" target="_blank"><img src="../IMAGENES/Pruebas_cat_advi3.png" class="img_gen" alt="Pruebas"></a>
+                                <a href="https://github.com/TrilogyRGDA/Clase_categoria_audiovisual" target="_blank"><img src="../IMAGENES/Pruebas_cat_advi4.png" class="img_gen" alt="Pruebas"></a>
+                </figure>
+            </div>
+            <br><br><br><br><br><br>
+            <p>
+                Las pruebas realizadas en la clase CancelacionCod son de los siguientes metodos:
+                <ol>
+                    <br>
+                    <li>
+                        <p>
+                            "fecha" Este metodo estático necesita un correo y te vevuelve un String con la fecha, en las pruebas el metodo que lo comprueba se llama "testFecha".<br>En el metodo testFecha hay 2 variables una llamada "fechaObtenida" y otra que es "fechaPrevista" donde "fechaObtenida" el ifual al metodo fecha y "fechaPrevista" es el texto con la fecha prevista y con el metodo assertEquals de Junit4 comparo si el String obtenido con "fechaObtenida" es igual al string de la variable "fechaPrevista".
+                        </p>
+                    </li>
+                </ol>
+            </p>
+            <div class="contenedor_img">
+                <figure>
+                    <a href="https://github.com/TrilogyRGDA/Pagina_cancelacion_cuenta" target="_blank"><img src="../IMAGENES/Pruebas_cancelacion.png" class="img_gen" alt="Pruebas"></a>
+                </figure>
+            </div>
+        </article>
+    </section>
+    <br><br>
+    <!-- Pie de página -->
+    <footer>
+        <div class="p_footer">
+            <p>Realizado por: Adrián Leal Vacas, Gonzalo Amo Cano y Raúl Senso Montojo</p>
+        </div>
+    </footer>
+</body>
+</html>
